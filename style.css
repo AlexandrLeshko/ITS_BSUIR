@@ -1,0 +1,288 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+@font-face {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local("Inter"),
+		url(fonts/Inter/Inter-Regular.woff2) format("woff2"),
+		url(fonts/Inter/Inter-Regular.woff) format("woff");
+}
+@font-face {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: local("Inter"),
+		url(fonts/Inter/Inter-Bold.woff2) format("woff2"),
+		url(fonts/Inter/Inter-Bold.woff) format("woff");
+}
+
+/*-----------------------------------------------------------*/
+
+body {
+	background: #999;
+}
+
+
+.wrapper {}
+.container {
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+
+.header__background {
+	background: url(img/header__background.svg) left top no-repeat;
+	background-size: cover;
+}
+.header__container {
+	max-width: 100%;
+	backdrop-filter: blur(125px);
+}
+header {
+	height: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 30px 60px 75px;
+}
+.header__row {
+	margin: 0 0 90px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	flex-wrap: wrap-reverse;
+	column-gap: 40px;
+	row-gap: 25px;
+}
+.header__logo {
+	max-height: 200px;
+	width: 175px;
+	cursor: pointer;
+}
+.header__logo img {
+	width: 100%;
+	object-fit: contain;
+}
+.header__nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	flex-wrap: wrap;
+	column-gap: 40px;
+	font-family: 'Inter', sans-serif;
+	line-height: 30px;
+	color: #fff;
+}
+.header__nav-button {
+	font-weight: 700;
+	font-size: 16px;
+	cursor: pointer;
+}
+.header__nav-language {
+	font-size: 20px;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.header__info {
+	margin: 0 0 50px 0;
+}
+.header__info p{
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	color: #fff;
+}
+.header__info p:nth-child(1){
+	font-size: calc(1.823vw + 8.75px);
+	line-height: calc(1.979vw + 9.5px);
+}
+.header__info p:nth-child(2){
+	font-size: calc(3.125vw + 15px);
+	line-height: calc(3.385vw + 16.25px);
+}
+.header__sign-up_btn {
+	background: #999;
+	display: inline-block;
+	padding: 15px 60px;
+	border-radius: 8px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 24px;
+	color: #317189;
+	background: linear-gradient(90deg, #FFFFFF 0%, #F1FAFF 100%);
+	box-shadow: 0px 20px 40px rgba(255, 255, 255, 0.15);
+	user-select: none;
+	cursor: pointer;
+}
+.header__sign-up_btn:hover {
+	color: #fff;
+	background: #DD6694;
+}
+.header__sign-up_btn:active {
+	color: #317189;
+	background: linear-gradient(90deg, #FFFFFF 0%, #F1FAFF 100%);
+}
+
+
+@media (max-width: 1024px) {
+	header {
+		padding: 30px 30px 100px;
+	}
+	.header__row {
+		margin: 0 0 70px 0;
+	}
+}
+@media (max-width: 768px) {
+	header {
+		padding: 30px 30px 70px;
+	}
+	.header__row {
+		margin: 0 0 50px 0;
+	}
+	.header__sign-up_btn {
+		padding: 15px 30px;
+	}
+	.header__sign-up_btn:hover {
+		color: #317189;
+		background: linear-gradient(90deg, #FFFFFF 0%, #F1FAFF 100%);
+	}
+}
+
+
+main {
+	flex-grow: 1;
+}
+main h1 {}
+
+
+
+.meeting {}
+.meeting h2{}
+.meeting h3{}
+.meeting__ifno {}
+.meeting__download-button {}
+
+
+
+.controlSys {}
+.controlSys h2{}
+.controlSys h3{}
+.controlSys ul{}
+.controlSys ul li{}
+.controlSys ul li span{}
+.controlSys__button {}
+/*---------------------------------------------.registration-button {}*/
+
+
+
+.intelligentIT {}
+.intelligentIT h2{}
+.intelligentIT h3{}
+.intelligentIT ul{}
+.intelligentIT ul li{}
+.intelligentIT ul li span{}
+.intelligentIT__button {}
+/*---------------------------------------------.registration-button {}*/
+
+
+
+.autoSys {}
+.autoSys h2{}
+.autoSys h3{}
+.autoSys ul{}
+.autoSys ul li{}
+.autoSys ul li span{}
+.autoSys__button {}
+/*---------------------------------------------.registration-button {}*/
+
+
+
+.sysDesign {}
+.sysDesign h2{}
+.sysDesign h3{}
+.sysDesign ul{}
+.sysDesign ul li{}
+.sysDesign ul li span{}
+.sysDesign__button {}
+/*---------------------------------------------.registration-button {}*/
+
+
+
+.modeling {}
+.modeling h2{}
+.modeling h3{}
+.modeling ul{}
+.modeling ul li{}
+.modeling ul li span{}
+.modeling__button {}
+/*---------------------------------------------.registration-button {}*/
+
+
+
+.committee {}
+.committee__row {}
+.committee__organization {}
+.committee__programm {}
+.committee ul{}
+.committee ul li{}
+.committee ul li p{}
+
+
+
+.video-player {}
+
+
+
+.register-form {}
+.register-form__title {}
+.register-form form{}
+.register-form form label{}
+.register-form form input{}
+.register-form form select{
+	width: 100%;
+}
+.register-form form select option{}
+.register-form input[type='submit'] {}
+
+
+
+.footer {}
+.footer__column {}
