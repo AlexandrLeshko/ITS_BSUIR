@@ -207,32 +207,25 @@ header {
 }
 .header__language {
 	display: inline-block;
-	padding: 5px 15px;
 	border-radius: 5px;
 	font-size: 20px;
 	line-height: 30px;
 	white-space: nowrap;
-	cursor: pointer;
+	cursor: default;
 }
-.header__language, .header__language a, .header__language span {
+.header__language, .header__language * {
 	color: #fff;
 }
-.header__language:hover {
+.header__language * {
+	display: inline-block;
+	padding: 5px 8px;
+	border-radius: 5px;
+}
+.header__language>a:hover {
 	background: rgba(0, 0, 0, 0.15);
 }
-.header__language:active {
+.header__language>a:active {
 	background: rgba(0, 0, 0, 0.25);
-}
-.burger__language {
-	display: none;
-	padding: 5px 15px;
-	border-radius: 5px;
-	font-size: 20px;
-	line-height: 30px;
-	white-space: nowrap;
-}
-.burger__language, .burger__language a, .burger__language span {
-	color: #fff;
 }
 .burger__button {
 	display: none;
@@ -485,14 +478,68 @@ main {
 
 
 .committee {}
-.committee__row {}
-.committee__organization {}
-.committee__programm {}
-.committee ul{}
-.committee ul li{}
-.committee ul li p{}
+.committee__row {
+	padding: 0 0 12px;
+	display: flex;
+	column-gap: 12px;
+}
+.committee__button {
+	padding: 12px 70px;
+	width: 100%;
+	max-width: 425px;
+	text-align: left;
+}
+.committee__button--selected {
+	margin: 0 0 -12px;
+	padding: 18px 70px;
+	border-radius: 10px 10px 0 0;
+	color: #233968;
+	background: #C2F2FF;
+	cursor: default;
+}
+.committee__button--selected:hover, .committee__button--selected:active {
+	color: #233968;
+	background: #C2F2FF;
+}
+.committee>ul {
+	padding: 75px;
+	border-radius: 0 10px 10px 10px;
+	color: #25386A;
+	background: #C2F2FF;
+}
+.committee>ul>li {
+	font-size: 24px;
+	line-height: 35px;
+	margin-bottom: 35px;
+}
+.committee>ul>li>p:nth-child(1) {font-weight: 700;}
 
+@media (max-width: 1024px) {
+	.committee__button {
+		max-width: 300px;
+		padding: 12px 30px;
+	}
+	.committee__button--selected {padding: 18px 30px;}
+	.committee>ul {padding: 50px 20px;}
+}
 
+@media (max-width: 766px) {
+	.committee__button {
+		width: calc(50% - 6px);
+		max-width: 170px;
+		padding: 10px;
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.committee__button--selected {padding: 16px 10px;}
+	.committee>ul {padding: 40px 15px;}
+	.committee>ul>li {
+		font-size: 20px;
+		line-height: 30px;
+		margin-bottom: 30px;
+	}
+.committee>ul>li>p:nth-child(1) {font-weight: 700;}
+}
 
 .video-player {}
 
@@ -503,9 +550,7 @@ main {
 .register-form form{}
 .register-form form label{}
 .register-form form input{}
-.register-form form select{
-	width: 100%;
-}
+.register-form form select{}
 .register-form form select option{}
 .register-form input[type='submit'] {}
 
