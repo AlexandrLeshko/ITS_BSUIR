@@ -21,16 +21,8 @@
 	transition: all 300ms;
 }
 body {
-	font-family: Inter, sans-serif, Arial;
+	font-family: 'Inter', sans-serif;
 	font-size: 20px;
-}
-:root {
-	--white: #fff;
-	--lt-blue: #79DCF8;
-	--lt-pink: #D89FB5;
-	--pink: #DD6694;
-	--dark-blue: #2A4770;
-	--grey: #868686;
 }
 .wrapper {}
 .container {
@@ -46,13 +38,13 @@ body {
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 30px;
-	color: var(--white);
-	background: var(--lt-pink);
+	color: #fff;
+	background: #D89FB5;
 	user-select: none;
 	cursor: pointer;
 }
-.button:hover {background: var(--pink);}
-.button:active {background: var(--lt-pink);}
+.button:hover {background: #DD6694;}
+.button:active {background: #D89FB5;}
 @media (max-width: 767px) {
 	.button {
 		padding: 20px 40px;
@@ -76,7 +68,7 @@ h1 {
 	font-size: 44px;
 	line-height: 120%;
 	font-weight: 700;
-	color: var(--grey);
+	color: #868686;
 }
 @media (max-width: 1024px) {
 	h1 {
@@ -95,7 +87,7 @@ h2{
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 120%;
-	color: var(--dark-blue);
+	color: #2A4770;
 }
 h3{
 	margin-bottom: calc(25px * 1.4);
@@ -133,7 +125,7 @@ section ul li {
 }
 section ul li span {
 	font-size: 16px;
-	color: var(--lt-blue);
+	color: #79DCF8;
 }
 @media (max-width: 1024px) {
 	section ul {
@@ -181,17 +173,6 @@ header {
 	column-gap: 40px;
 	row-gap: 25px;
 }
-@media (max-width: 768px) {
-	.header__row {
-		flex-direction: row-reverse;
-		flex-wrap: wrap;
-	}
-	.header__row .header__logo {order: 3; margin-right: auto;}
-	.header__row .header__nav {order: 2; margin-left: auto;}
-	.header__row .burger__button {order: 1;}
-}
-
-
 .header__logo {
 	max-height: 200px;
 	width: 175px;
@@ -215,7 +196,7 @@ header {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 30px;
-	color: var(--white);
+	color: #fff;
 	cursor: pointer;
 }
 .header__link:hover {
@@ -226,25 +207,32 @@ header {
 }
 .header__language {
 	display: inline-block;
-	padding: 5px;
+	padding: 5px 15px;
+	border-radius: 5px;
 	font-size: 20px;
 	line-height: 30px;
 	white-space: nowrap;
-	color: var(--white);
-}
-.header__language * {
-	padding: 8px;
-	border-radius: 5px;
-	color: inherit;
-}
-.header__language a {
 	cursor: pointer;
 }
-.header__language a:hover {
+.header__language, .header__language a, .header__language span {
+	color: #fff;
+}
+.header__language:hover {
 	background: rgba(0, 0, 0, 0.15);
 }
-.header__language a:active {
+.header__language:active {
 	background: rgba(0, 0, 0, 0.25);
+}
+.burger__language {
+	display: none;
+	padding: 5px 15px;
+	border-radius: 5px;
+	font-size: 20px;
+	line-height: 30px;
+	white-space: nowrap;
+}
+.burger__language, .burger__language a, .burger__language span {
+	color: #fff;
 }
 .burger__button {
 	display: none;
@@ -256,21 +244,19 @@ header {
 	line-height: 30px;
 	text-align: center;
 	user-select: none;
-	color: var(--white);
+	color: #fff;
 }
 .burger__menu {
 	display: none;
-	flex-direction: column;
-	gap: 10px;
 	position: absolute;
 	top: 0;
 	right: -105vw;
 	z-index: 1;
 	width: 100%;
 	max-width: 100vw;
-	padding: 90px 30px 45px;
+	padding: 30px 70px;
 	line-height: 30px;
-	background: var(--dark-blue);
+	background: #2a4770;
 	overflow: hidden;
 }
 .burger--opened {
@@ -281,24 +267,21 @@ header {
 	padding: 5px 15px;
 	font-weight: 700;
 	font-size: 16px;
-	hyphens: auto;
-	color: var(--white);
+	color: #fff;
 }
 @media (max-width: 768px) {
-	.header__nav .header__link{
+	.header__nav>a.header__link {
 		display: none;
 	}
-	.header__language a:hover {
-		background: none;
+	.header__nav {
+		width: calc(100% - 85px);
+		justify-content: end;
 	}
 	.burger__button {
 		display: block;
 	}
 	.burger__menu {
-		display: flex;
-	}
-	.burger__link:active {
-		text-decoration: underline;
+		display: block;
 	}
 }
 
@@ -310,7 +293,7 @@ header {
 .header__info p{
 	font-weight: 700;
 	line-height: 65px;
-	color: var(--white);
+	color: #fff;
 }
 .header__info p:nth-child(1){
 	font-size: 40px;
@@ -320,12 +303,12 @@ header {
 }
 .header__button {
 	padding: 15px 70px;
-	color: var(--dark-blue);
+	color: #317189;
 	background: #fcfcfc;
 }
 .header__button:hover {
-	color: var(--white);
-	background: var(--pink);
+	color: #fff;
+	background: #DD6694;
 }
 .header__button:active {
 	color: #317189;
@@ -541,13 +524,13 @@ main {
 	gap: 20px;
 	font-size: 16px;
 	line-height: 130%;
-	color: var(--white);
+	color: #fff;
 }
 .footer__column {
 	width: calc(25% - 15px);
 }
 .footer__column a {
-	color: var(--white);
+	color: #fff;
 }
 
 
