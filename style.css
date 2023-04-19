@@ -20,6 +20,9 @@
 * {
 	transition: all 300ms;
 }
+html {
+	scroll-behavior: smooth;
+}
 body {
 	font-family: 'Inter', sans-serif;
 	font-size: 20px;
@@ -243,11 +246,10 @@ header {
 	display: none;
 	position: absolute;
 	top: 0;
-	right: -105vw;
+	right: -102%;
 	z-index: 1;
 	width: 100%;
-	max-width: 100vw;
-	padding: 30px 70px;
+	padding: 80px 70px 50px 50px;
 	line-height: 30px;
 	background: #2a4770;
 	overflow: hidden;
@@ -256,7 +258,7 @@ header {
 	right: 0;
 }
 .burger__link {
-	display: inline-block;
+	display: block;
 	padding: 5px 15px;
 	font-weight: 700;
 	font-size: 16px;
@@ -477,72 +479,83 @@ main {
 
 
 
-.committee {}
-.committee__row {
-	padding: 0 0 12px;
+.committee {
+	margin-bottom: 100px;
+	overflow: hidden;
+}
+.committee__buttons {
 	display: flex;
 	column-gap: 12px;
+	padding-bottom: 12px;
 }
+.committee__buttons>* {transition: all 0s;}
 .committee__button {
-	padding: 12px 70px;
 	width: 100%;
-	max-width: 425px;
-	text-align: left;
+	max-width: 410px;
+	padding: 12px 75px;
+	text-align-last: left;
 }
 .committee__button--selected {
-	margin: 0 0 -12px;
-	padding: 18px 70px;
+	margin-bottom: -12px;
+	padding: 18px 75px;
 	border-radius: 10px 10px 0 0;
 	color: #233968;
 	background: #C2F2FF;
-	cursor: default;
 }
-.committee__button--selected:hover, .committee__button--selected:active {
-	color: #233968;
+.committee__button--selected:hover {
+	cursor: default;
 	background: #C2F2FF;
 }
-.committee>ul {
-	padding: 75px;
+.committee__button--selected:active {
+	background: #C2F2FF;
+}
+.committee__info {
+	display: flex;
 	border-radius: 0 10px 10px 10px;
+	overflow: hidden;
+}
+.committee__topic {
+	min-width: 100%;
+	padding: 75px;
+	font-size: 24px;
+	line-height: 35px;
 	color: #25386A;
 	background: #C2F2FF;
 }
-.committee>ul>li {
-	font-size: 24px;
-	line-height: 35px;
-	margin-bottom: 35px;
-}
-.committee>ul>li>p:nth-child(1) {font-weight: 700;}
-
 @media (max-width: 1024px) {
 	.committee {
 		margin-bottom: 25px;
 	}
 	.committee__button {
-		max-width: 300px;
-		padding: 12px 30px;
+		max-width: 290px;
+		padding: 14px 25px;
 	}
-	.committee__button--selected {padding: 18px 30px;}
-	.committee>ul {padding: 50px 20px;}
+	.committee__button--selected {
+		padding: 20px 25px;
+	}
+	.committee__topic {
+		padding: 50px 20px;
+	}
 }
-
-@media (max-width: 766px) {
+@media (max-width: 767px) {
 	.committee__button {
-		width: calc(50% - 6px);
 		max-width: 170px;
 		padding: 10px;
 		font-size: 16px;
-		line-height: 20px;
+		line-height: 19px;
 	}
-	.committee__button--selected {padding: 16px 10px;}
-	.committee>ul {padding: 40px 15px;}
-	.committee>ul>li {
+	.committee__button--selected {
+		padding: 16px 10px;
+	}
+	.committee__topic {
+		padding: 40px 15px;
 		font-size: 20px;
 		line-height: 30px;
-		margin-bottom: 30px;
 	}
-.committee>ul>li>p:nth-child(1) {font-weight: 700;}
 }
+
+
+
 
 .video {}
 .video-player {
@@ -555,9 +568,9 @@ main {
 .register-form {
 	margin-bottom: 0;
 }
-.register-form__title /*h1*/{}
-.register-form form{}
-.register-form form label{
+.register-form__title /*h1*/ {}
+.register-form>form {}
+.register-form>form>label {
 	display: block;
 	width: 100%;
 	font-family: Inter, sans-serif, Arial;
@@ -565,7 +578,8 @@ main {
 	line-height: 24px;
 	color: #4B6973;
 }
-.register-form form textarea{
+.register-form>form>textarea,
+.register-form>form>input[type="text"] {
 	box-sizing: border-box;
 	display: block;
 	width: 100%;
@@ -604,11 +618,6 @@ main {
 }
 .register-form input[type='submit']:hover {background: #DD6694;}
 .register-form input[type='submit']:active {background: #D89FB5;}
-@media (max-width: 767px) {
-	.button {
-		padding: 20px 40px;
-	}
-}
 
 
 
