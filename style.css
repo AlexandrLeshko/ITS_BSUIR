@@ -515,6 +515,9 @@ main {
 .committee>ul>li>p:nth-child(1) {font-weight: 700;}
 
 @media (max-width: 1024px) {
+	.committee {
+		margin-bottom: 25px;
+	}
 	.committee__button {
 		max-width: 300px;
 		padding: 12px 30px;
@@ -541,18 +544,71 @@ main {
 .committee>ul>li>p:nth-child(1) {font-weight: 700;}
 }
 
-.video-player {}
+.video {}
+.video-player {
+	aspect-ratio: 16/9;
+	width: 100%;
+}
 
 
 
-.register-form {}
-.register-form__title {}
+.register-form {
+	margin-bottom: 0;
+}
+.register-form__title /*h1*/{}
 .register-form form{}
-.register-form form label{}
-.register-form form input{}
-.register-form form select{}
-.register-form form select option{}
-.register-form input[type='submit'] {}
+.register-form form label{
+	display: block;
+	width: 100%;
+	font-family: Inter, sans-serif, Arial;
+	font-size: 20px;
+	line-height: 24px;
+	color: #4B6973;
+}
+.register-form form textarea{
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 5px 15px;
+	font-size: 20px;
+	line-height: 30px;
+	color: #9F9F9F;
+	border: 2px solid #6FB4FF;
+	border-radius: 10px;
+}
+.register-form>form>select {
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 9.5px 15px;
+	font-size: 20px;
+	border: 2px solid #6FB4FF;
+	border-radius: 10px;
+}
+.register-form input[type='submit'] {
+	display: inline-block;
+	width: inherit;
+	margin-top: 20px;
+	padding: 25px 90px;
+	border: none;
+	border-radius: 10px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 30px;
+	color: #fff;
+	background: #D89FB5;
+	user-select: none;
+	cursor: pointer;
+}
+.register-form input[type='submit']:hover {background: #DD6694;}
+.register-form input[type='submit']:active {background: #D89FB5;}
+@media (max-width: 767px) {
+	.button {
+		padding: 20px 40px;
+	}
+}
 
 
 

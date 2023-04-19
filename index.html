@@ -154,21 +154,21 @@
 					</ul>
 				</section>
 				<section class="video-player">
-					#####
+					<iframe class="video-player" src="https://www.youtube.com/embed/Ap-hfXN6gX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 				</section>
 				<section class="register-form">
-					<div class="register-form__title">Регистрация</div>
+					<h1 class="register-form__title">Регистрация</h1>
 					<form action="post">
 						<label for="fullName">ФИО</label>
-						<input id="fullName" type="text" placeholder="Иванов Иван Иванович">
+						<textarea rows="1" id="fullName" type="text" placeholder="Иванов Иван Иванович"></textarea>
 						<label for="academicDegree">Ученая степень</label>
-						<input id="academicDegree" type="text" placeholder="Доктор наук">
+						<textarea rows="1" id="academicDegree" type="text" placeholder="Доктор наук"></textarea>
 						<label for="academicTitle">Ученое звание</label>
-						<input id="academicTitle" type="text" placeholder="Профессор">
+						<textarea rows="1" id="academicTitle" type="text" placeholder="Профессор"></textarea>
 						<label for="organizationName">Название организации</label>
-						<input id="organizationName" type="text" placeholder="БГУИР">
+						<textarea rows="1" id="organizationName" type="text" placeholder="БГУИР"></textarea>
 						<label for="email">Е-mail</label>
-						<input id="email" type="text" placeholder="ivanov_ivan@bsuir.by">
+						<textarea rows="1" id="email" type="text" placeholder="ivanov_ivan@bsuir.by"></textarea>
 						<label for="conferenceDirection">Направление работы конференции</label>
 						<select name="conferenceDirection" id="conferenceDirection">
 							<option value="Проблемы устойчивого развития экономики">Проблемы устойчивого развития экономики</option>
@@ -177,6 +177,16 @@
 							<option value="Социогуманитарные и правовые проблемы модернизации общества">Социогуманитарные и правовые проблемы модернизации общества</option>
 							<option value="Банковский бизнес и финансовая экономика">Банковский бизнес и финансовая экономика</option>
 							<option value="Учетно-аналитическое обеспечение организации в условиях цифровизации экономики">Учетно-аналитическое обеспечение организации в условиях цифровизации экономики</option>
+						</select>
+						<label for="reportTitle">Название доклада</label>
+						<textarea id="reportTitle" type="text" placeholder="Учетно-аналитическое обеспечение организации в условиях цифровизации экономики"></textarea>
+						<label for="ParticipateAs">Принять участие как</label>
+						<select name="ParticipateAs" id="ParticipateAs">
+							<option value="">Опубликовать статью</option>
+							<option value="">2</option>
+							<option value="">3</option>
+							<option value="">4</option>
+							<option value="">5</option>
 						</select>
 						<input type="submit" value="Регистрация">
 					</form>
