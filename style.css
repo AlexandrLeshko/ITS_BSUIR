@@ -614,10 +614,12 @@ select {
 	display: block;
 	width: 100%;
 	margin-bottom: 20px;
-	padding: 9.5px 15px;
+	padding: 9.5px 45px 9.5px 15px;
 	font-size: 20px;
 	border: 2px solid #6FB4FF;
 	border-radius: 10px;
+	appearance: none !important;
+	background: url("data:image/svg+xml,<svg height='100%' width='100%' viewBox='0 0 16 16' fill='rgb(216, 159, 181)' xmlns='http://www.w3.org/2000/svg'><path d='M 3 5 L 7 11 L 11 5 Z'/></svg>") calc(100%) center no-repeat !important;
 }
 input[type='submit'] {
 	display: inline-block;
