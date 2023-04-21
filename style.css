@@ -35,6 +35,18 @@ body {
 	--light-navy: #317189;
 }
 .wrapper {}
+.scroll-up {
+	display: none;
+	opacity: 0;
+	position: fixed;
+	height: 40px;
+	width: 40px;
+	background: var(--dark-pink);
+	bottom: 45px;
+	right: 90px;
+	z-index: 10;
+	border-radius: 50%;
+}
 .container {
 	width: 100%;
 	max-width: 1440px;
