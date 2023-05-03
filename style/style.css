@@ -4,8 +4,8 @@
 	font-weight: 400;
 	font-display: swap;
 	src: local("Inter"),
-		url(fonts/Inter/Inter-Regular.woff2) format("woff2"),
-		url(fonts/Inter/Inter-Regular.woff) format("woff");
+		url(../font/Inter-Regular.woff2) format("woff2"),
+		url(../font/Inter-Regular.woff) format("woff");
 }
 @font-face {
 	font-family: "Inter";
@@ -13,8 +13,8 @@
 	font-weight: 700;
 	font-display: swap;
 	src: local("Inter"),
-		url(fonts/Inter/Inter-Bold.woff2) format("woff2"),
-		url(fonts/Inter/Inter-Bold.woff) format("woff");
+		url(../font/Inter-Bold.woff2) format("woff2"),
+		url(../font/Inter-Bold.woff) format("woff");
 }
 
 * {
@@ -451,7 +451,7 @@ main {
 		font-size: 22.5px;
 	}
 	.meeting__ifno {
-		margin-bottom: calc(18 * 1.4);
+		margin-bottom: calc(18px * 1.4);
 		font-size: 18px;
 	}
 }
@@ -650,7 +650,7 @@ select {
 	border: 2px solid #6FB4FF;
 	border-radius: 10px;
 	appearance: none !important;
-	background: url("data:image/svg+xml,<svg height='100%' width='100%' viewBox='0 0 16 16' fill='rgb(216, 159, 181)' xmlns='http://www.w3.org/2000/svg'><path d='M 3 5 L 7 11 L 11 5 Z'/></svg>") calc(100%) center no-repeat !important;
+	background: url("data:image/svg+xml,<svg height='100%' width='100%' viewBox='0 0 16 16' fill='rgb(0, 0, 0)' xmlns='http://www.w3.org/2000/svg'><path d='M 3 5 L 7 11 L 11 5 Z'/></svg>") calc(100%) center no-repeat !important;
 }
 input[type='submit'] {
 	width: inherit;
