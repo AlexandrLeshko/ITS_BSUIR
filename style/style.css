@@ -538,13 +538,12 @@ main {
 }
 .committee__button {
 	width: 100%;
-	max-width: 410px;
-	padding: 12px 75px;
+	padding: 12px 30px;
 	text-align: left;
 }
 .committee__button--selected {
 	margin-bottom: -13px;
-	padding: 18px 75px;
+	padding: 18px 30px;
 	border-radius: 10px 10px 0 0;
 	color: #233968;
 	background: var(--light-blue);
@@ -560,7 +559,6 @@ main {
 .committee__info {
 	display: flex;
 	align-items: start;
-	border-radius: 0 10px 10px 10px;
 	overflow: hidden;
 }
 .committee__topic {
@@ -576,11 +574,10 @@ main {
 		margin-bottom: 25px;
 	}
 	.committee__button {
-		max-width: 290px;
-		padding: 14px 25px;
+		padding: 14px 20px;
 	}
 	.committee__button--selected {
-		padding: 20px 25px;
+		padding: 20px 20px;
 	}
 	.committee__topic {
 		padding: 50px 20px;
@@ -588,7 +585,6 @@ main {
 }
 @media (max-width: 767px) {
 	.committee__button {
-		max-width: 170px;
 		padding: 10px;
 		font-size: 16px;
 		line-height: 19px;
