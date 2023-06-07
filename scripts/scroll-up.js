@@ -16,10 +16,8 @@ function Visible(target) {
 	};
 	if (targetPosition.bottom > windowPosition.top && targetPosition.top < windowPosition.bottom && targetPosition.right > windowPosition.left && targetPosition.left < windowPosition.right) {
 		scrollUp.style.display = 'none';
-		scrollUp.style.opacity = '0';
 	} else {
 		scrollUp.style.display = 'block';
-		scrollUp.style.opacity = '0.8';
 	};
 };
 Visible (header);
