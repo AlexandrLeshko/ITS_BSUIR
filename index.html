@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+    <head>
+        <title>Конференция</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+        <link rel="stylesheet" type="text/css" href="styles/default.css">
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+    </head>
+    <body>
+        <script src="scripts/jquery-3.7.0.min.js"></script>
+        <div class="wrapper">
+            <a href="#header" class="scroll-up">
+                <svg height='100%' width='100%' viewBox='0 0 16 16' fill='#fff'>
+                    <path d='M 4 10.5 L 8 4.5 L 12 10.5 Z'/>
+                </svg>
+            </a>
+            <header class="header" id="header">
+                <div class="header__content">
+                    <div class="header__row">
+                        <a href="#" class="header__logo">
+                            <img src="imgs/header__logo.svg" alt="#">
+                        </a>
+                        <nav class="header__nav">
+                            <a href="#committee" class="header__link">Организаторы</a>
+                            <a href="#committee" class="header__link">Программа</a>
+                            <a href="#" class="header__link">Участники</a>
+                            <a href="#footer" class="header__link">Контакты</a>
+                            <a href="#" class="header__link">Архив</a>
+                            <div class="header__language"><span>RU</span>|<a href="#">EN</a></div>
+                        </nav>
+                        <div class="burger__button">&#9776;</div>
+                        <div class="burger__menu">
+                            <a href="#committee" class="burger__link">Организаторы</a>
+                            <a href="#committee" class="burger__link">Программа</a>
+                            <a href="#" class="burger__link">Участники</a>
+                            <a href="#footer" class="burger__link">Контакты</a>
+                            <a href="#" class="burger__link">Архив</a>
+                        </div>
+                    </div>
+                    <div class="header__info">
+                        <p>Добро пожаловать на конференцию</p>
+                        <p>Информационные технологии и системы</p>
+                    </div>
+                    <a href="#register-form" class="header__button button">Регистрация</a>
+                </div>
+            </header>
+            <main class="sections">
+                <h1>Научная программа и секции конференции</h1>
+                <section class="meeting">
+                    <h2>Пленарное заседание</h2>
+                    <h3>23 ноября 2022</h3>
+                    <div class="meeting__info">
+                        10.00 ауд.229, корпус 1, БГУИР (г.Минск, ул.П.Бровки, 6)<br>
+                        <br>
+                        Председатель&mdash; д.т.н., проф. Л.Ю.Шилин<br>
+                        <br>
+                        Приветственное слово участникам международной конференции<br>
+                        &laquo;Информационные технологии и системы - <b>2022</b>&raquo;.
+                    </div>
+                    <a class="meeting__button button" href="#register-form">Скачать программу конференции</a>
+                </section>
+                <section class="controlSys">
+                    <h2>&laquo;Системы управления&raquo;</h2>
+                    <h3>Начало в 12:00 Ауд. 704, корпус 5</h3>
+                    <ul>
+                        <li> моделирование систем управления;</li>
+                        <li> автоматизированные исследования систем управления;</li>
+                        <li> проектирование систем управления;</li>
+                        <li> микропроцессорные системы управления;</li>
+                        <li> информационные технологии в системах управления;</li>
+                        <li> системы передачи и защиты дискретной информации;</li>
+                        <li> системы телемеханики;</li>
+                        <li> элементы и устройства систем управления.</li>
+                    </ul>
+                    <a class="controlSys__button button" href="#register-form">Регистрация</a>
+                </section>
+                <section class="intelligentIT">
+                    <h2>&laquo;Интеллектуальные информационные технологии&raquo;</h2>
+                    <h3>Начало в 12:00 Ауд. 414, корпус 5</h3>
+                    <ul>
+                        <li> проектирование баз знаний;</li>
+                        <li> интеллектуальный поиск информации;</li>
+                        <li> интеллектуальные решатели задач;</li>
+                        <li> пользовательские интерфейсы интеллектуальных систем.</li>
+                    </ul>
+                    <a class="intelligentIT__button button" href="#register-form">Регистрация</a>
+                </section>
+                <section class="autoSys">
+                    <h2>&laquo;Автоматизированные системы обработки информации&raquo;</h2>
+                    <h3>Начало в 12:00 Ауд. 414, корпус 5</h3>
+                    <ul>
+                        <li> математические модели и методы обработки информации: статистические, численные, логические, графовые, нейросетевые и другие;</li>
+                        <li> анализ многомерных данных;</li>
+                        <li> методологические проблемы и технологии подготовки специалистов в области систем обработки информации;</li>
+                        <li> технологии и стандарты программирования и проектирования систем обработки информации;</li>
+                        <li> системы и средства совместной работы пользователей;</li>
+                        <li> защита информации в автоматизированных системах обработки информации.</li>
+                    </ul>
+                    <a class="autoSys__button button" href="#register-form">Регистрация</a>
+                </section>
+                <section class="sysDesign">
+                    <h2>&laquo;Проектирование встраиваемых систем&raquo;</h2>
+                    <h3>Начало в 12:00 Ауд. 411, корпус 5</h3>
+                    <ul>
+                        <li> проектирование и быстрое прототипирование встраиваемых систем на ПЛИС;</li>
+                        <li> методологии проектирования IP-компонент встраиваемых систем;</li>
+                        <li> программная и аппаратная защита IP-компонент;</li>
+                        <li> контролепригодное проектирование и тестирование встраиваемых систем;</li>
+                        <li> реконфигурируемые встраиваемые системы.</li>
+                    </ul>
+                    <a class="sysDesign__button button" href="#register-form">Регистрация</a>
+                </section>
+                <section class="modeling">
+                    <h2>&laquo;Математическое моделирование и компьютерная графика&raquo;</h2>
+                    <h3>Начало в 12:00 Ауд. 412, корпус 5</h3>
+                    <ul>
+                        <li> методы решения уравнений математической физики;</li>
+                        <li> методы нелинейной оптимизации;</li>
+                        <li> модели и методы тепло и массопереноса;</li>
+                        <li> аппаратное обеспечение компьютерной графики;</li>
+                        <li> алгоритмы и методы интерактивных программных продуктов.</li>
+                    </ul>
+                    <a class="modeling__button button" href="#register-form">Регистрация</a>
+                </section>
+                <section class="committee" id="committee">
+                    <div class="committee__buttons">
+                        <div class="committee__buttons-container">
+                            <div class="committee__button button">Организационный комитет</div>
+                            <div class="committee__button button">Программный коммитет</div>
+                            <div class="committee__button button">Текст дополнительной вкладки</div>
+                        </div>
+                    </div>
+                    <div class="committee__info">
+                        <div class="committee__topic">
+                            <b>Богуш Вадим Анатольевич</b>
+                            <p>доктор физико-математических наук, профессор, ректор БГУИР</p>
+                            <br>
+                            <b>Давыдов Максим Викторович</b>
+                            <p>кандидат технических наук, доцент, первый проректор БГУИР</p>
+                            <br>
+                            <b>Шнейдеров Евгений Николаевич</b>
+                            <p>кандидат технических наук, доцент, проректор по учебной работе БГУИР</p>
+                            <br>
+                            <b>Стемпицкий Виктор Романович</b>
+                            <p>кандидат технических наук, доцент, проректор по научной работе БГУИР</p>
+                            <br>
+                            <b>Кузнецов Дмитрий Федорович</b>
+                            <p>проректор по воспитательной работе БГУИР</p>
+                            <br>
+                            <b>Шилин Леонид Юрьевич</b>
+                            <p>доктор технических наук, профессор, декан факультета информационных технологий и управления БГУИР</p>
+                        </div>
+                        <div class="committee__topic">
+                            <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim.</b>
+                            <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Optio obcaecati id harum voluptatem nemo iusto cupiditate magni! Dolore, assumenda dolores?</p>
+                            <br>
+                            <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim.</b>
+                            <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Optio obcaecati id harum voluptatem nemo iusto cupiditate magni! Dolore, assumenda dolores?</p>
+                            <br>
+                            <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim.</b>
+                            <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Optio obcaecati id harum voluptatem nemo iusto cupiditate magni! Dolore, assumenda dolores?</p>
+                            <br>
+                            <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim.</b>
+                            <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Optio obcaecati id harum voluptatem nemo iusto cupiditate magni! Dolore, assumenda dolores?</p>
+                            <br>
+                            <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim.</b>
+                            <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Optio obcaecati id harum voluptatem nemo iusto cupiditate magni! Dolore, assumenda dolores?</p>
+                        </div>
+                        <div class="committee__topic">
+                            <b>Жирный текст дополнительной вкладки</b>
+                            <p>текст дополнительной вкладки</p>
+                            <br>
+                            <b>Жирный текст дополнительной вкладки</b>
+                            <p>текст дополнительной вкладки</p>
+                            <br>
+                            <b>Жирный текст дополнительной вкладки</b>
+                            <p>текст дополнительной вкладки</p>
+                        </div>
+                    </div>
+                </section>
+                <script>
+                    const BUTTONS = document.getElementsByClassName('committee__button');
+                    const TABS_CONTAINER = document.getElementsByClassName('committee__info')[0];
+                    const TABS = document.getElementsByClassName('committee__topic');
+
+                    BUTTONS[0].classList.add('committee__button--selected');
+                    TABS[0].style.display = 'block';
+
+                    for (let i = 0; i < BUTTONS.length; i++) {
+                        BUTTONS[i].addEventListener('click', () => {
+                            for (let button of BUTTONS) button.classList.remove('committee__button--selected');
+                            BUTTONS[i].classList.add('committee__button--selected');
+                            for (let tab of TABS) tab.style.display = 'none';
+                            TABS[i].style.display = 'block';
+                        })
+                    }
+                </script>
+                <section class="video">
+                    <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" class="video-player" frameborder="0" src="https://www.youtube.com/embed/vz04KwP2tZQ" title="YouTube video player"></iframe>
+                </section>
+                <section class="register-form" id="register-form">
+                    <h2 class="register-form__title">Регистрация</h2>
+                    <form action="#register-form">
+                        <label for="fullName">ФИО</label>
+                        <input id="fullName" type="text">
+                        <label for="academicDegree">Ученая степень</label>
+                        <input id="academicDegree" type="text">
+                        <label for="academicTitle">Ученое звание</label>
+                        <input id="academicTitle" type="text">
+                        <label for="organizationName">Название организации</label>
+                        <input id="organizationName" type="text">
+                        <label for="email">Е-mail</label>
+                        <input id="email" type="email">
+                        <label for="conferenceDirection">Направление работы конференции</label>
+                        <select name="conferenceDirection" id="conferenceDirection">
+                            <option value="Проблемы устойчивого развития экономики">Проблемы устойчивого развития экономики</option>
+                            <option value="Инновационные технологии современного менеджмента и маркетинга">Инновационные технологии современного менеджмента и маркетинга</option>
+                            <option value="Проблемы и тенденции устойчивого развития сферы туризма и гостеприимства">Проблемы и тенденции устойчивого развития сферы туризма и гостеприимства</option>
+                            <option value="Социогуманитарные и правовые проблемы модернизации общества">Социогуманитарные и правовые проблемы модернизации общества</option>
+                            <option value="Банковский бизнес и финансовая экономика">Банковский бизнес и финансовая экономика</option>
+                            <option value="Учетно-аналитическое обеспечение организации в условиях цифровизации экономики">Учетно-аналитическое обеспечение организации в условиях цифровизации экономики</option>
+                        </select>
+                        <label for="reportTitle">Название доклада</label>
+                        <textarea id="reportTitle" type="text"></textarea>
+                        <label for="ParticipateAs">Принять участие как</label>
+                        <select name="ParticipateAs" id="ParticipateAs">
+                            <option value="">Опубликовать статью</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                        </select>
+                        <input class="button" type="submit" value="Регистрация">
+                        <input class="button" type="reset" value="Очистить">
+                    </form>
+                </section>
+            </main>
+            <footer class="footer" id="footer">
+                <div class="footer__content">
+                    <div>
+                        Адрес: БГУИР. Беларусь 220013 г.Минск, ул. П.Бровки, 6
+                    </div>
+                    <div>
+                        Контактное лицо: Лаппо Александр Игоревич<br>
+                        Тел.: +375 259696920
+                    </div>
+                    <div>
+                        Консультации по техническим вопросам и оформлению тезисов:<br>
+                        Гракова Наталья Викторовна<br>
+                        Тел.: +375 17 293-89-23
+                    </div>
+                    <div>
+                        Email: <a href="#">its-conf@bsuir.by</a>
+                    </div>
+                    <p class="copyright">разработка: © ЦИИР БГУИР, 2002-2023</p>
+                </div>
+                <svg width="100%" heigth="100%" viewBox="0 0 1440 450">
+                    <path d="M 0 440 C 90 440, 150 415, 210 385 C 290 330, 370 300, 510 290 L 760 270 C 920 250, 950 235, 1130 155 L 1440 0 L 0 0 Z" fill="#fff"/>
+                </svg>
+            </footer>
+        </div>
+        <script src="scripts/burger__menu.js"></script>
+        <script src="scripts/scroll-up.js"></script>
+    </body>
+</html>
